@@ -37,7 +37,7 @@ app.post('/',function(request,response){
         connection.query(sql, function (err, result) {
             if(err){
                 if(err.errno==1062){
-                    res.write("Email exixts")
+                    response.write("Email exixts");
                 response.end();
                 }
                 else{
