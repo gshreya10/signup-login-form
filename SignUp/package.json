@@ -1,0 +1,24 @@
+{
+  "name": "SignUpForm",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon signup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "brcypt": "^1.0.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.13",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "description": ""
+}

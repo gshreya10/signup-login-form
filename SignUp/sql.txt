@@ -1,0 +1,10 @@
+CREATE TABLE `signupform`.`users` (
+  `username` VARCHAR(45) NULL,
+  `name` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `password` VARCHAR(100) NULL,
+  `address` VARCHAR(300) NULL,
+  `mobile` VARCHAR(15) NULL,
+  UNIQUE INDEX `username_UNIQUE` (`username` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE
+  );

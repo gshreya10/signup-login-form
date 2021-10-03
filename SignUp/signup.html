@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1><b>SIGN UP</b></h1>
+    <div class="signup-form" >
+        <form name="form" action="http://localhost:5002/" method="post" >
+            <div class="username"><br>
+                <label for="username">Userame</label><br>
+                <input id="username" type="text" name="username" placeholder="Enter Username" required>                 
+            </div>
+            <div class="name"><br>
+                <label for="name">Name</label><br>
+                <input id="name" type="text" name="name" placeholder="Enter Name" required>
+            </div>
+            <div class="email"><br>
+                <label for="email">Email</label><br>
+                <input id="email" type="text" name="email" placeholder="Enter Email" required
+                oninvalid="this.setCustomValidity('Incorrect Email')" 
+                oninput="this.setCustomValidity('')"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                >
+                
+            </div>
+            <div class="password"><br>
+                <label for="password">Password</label><br>
+                <input id="password" type="password" name="password" placeholder="Enter Password" required 
+                oninvalid="this.setCustomValidity('Password must contain min 8 characters including letters, numbers & special characters')" 
+                oninput="this.setCustomValidity('')"
+                pattern="(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};:\\|,.<>\/?]).{8,}" 
+                >
+            </div>
+            <div class="address"><br>
+                <label for="address">Address</label><br>
+                <input id="address" type="text" name="address" placeholder="Enter Address" required>
+            </div>
+            <div class="mobile"><br>
+                <label for="mobile">Mobile</label><br>
+                <input id="mobile" type="text" name="mobile" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="submit"><br>
+                <button type="submit" value="submit" name="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
